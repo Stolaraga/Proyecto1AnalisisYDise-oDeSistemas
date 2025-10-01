@@ -39,7 +39,6 @@ function writeDisp(arr: Slot[]) {
 }
 function uuid() { return crypto.randomUUID(); }
 function toMin(hhmm: string) { const [h, m] = hhmm.split(":").map(Number); return h*60+m; }
-function sameDay(d: Date, w: number) { return d.getDay() === w; }
 function addDays(d: Date, n: number) { const x = new Date(d); x.setDate(x.getDate()+n); return x; }
 
 /** solape estricto con buffer */
