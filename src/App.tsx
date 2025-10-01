@@ -1,4 +1,3 @@
-// src/App.tsx
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import RegistrarTutor from "./pages/RegistrarTutor";
@@ -18,7 +17,6 @@ export default function App() {
           <Link to="/accesos-permisos">Accesos y permisos</Link>
         </nav>
       </header>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/registrar-tutor" element={<RegistrarTutor />} />
