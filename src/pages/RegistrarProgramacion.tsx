@@ -159,7 +159,6 @@ export default function RegistrarProgramacion() {
   const row3: React.CSSProperties = { display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 12 };
   const lbl: React.CSSProperties = { fontSize: 14, fontWeight: 600, marginBottom: 4 };
   const input: React.CSSProperties = { padding: "10px 12px", border: "1px solid #e1e4ea", borderRadius: 10, width: "100%" };
-  const box: React.CSSProperties = { background: "#fff", border: "1px solid #e6e8ef", borderRadius: 12, padding: 16 };
   const btn: React.CSSProperties = { padding: "10px 14px", borderRadius: 10, border: "1px solid #d0d5e2", background: "#0ea5e9", color:"#fff", cursor:"pointer" };
   const btnGhost: React.CSSProperties = { padding: "10px 14px", borderRadius: 10, border: "1px solid #d0d5e2", background: "#f5f7fb", cursor:"pointer" };
 
