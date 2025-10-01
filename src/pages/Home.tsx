@@ -13,7 +13,7 @@ export default function Home() {
       <section style={{ display: "grid", gap: 16 }}>
         <Link to="/registrar-tutor" style={card}> Registrar tutor</Link>
         <Link to="/registrar-programacion" style={card}> Registrar programación de tutorías</Link>
-        <Link to="/registrar-disponibilidad" style={card}>⏱ Registrar disponibilidad de tutor</Link>
+        <Link to="/registrar-disponibilidad" style={card}> Registrar disponibilidad de tutor</Link>
         <Link to="/accesos-permisos" style={card}> Registrar accesos y permisos</Link>
       </section>
 
