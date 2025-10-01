@@ -1,6 +1,8 @@
 name: Deploy to GitHub Pages
+
 on:
-  push: { branches: [ main ] }
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -15,21 +17,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: plataforma-grafica   # << subcarpeta del proyecto
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: plataforma-grafica/package-lock.json
-      - run: npm ci
+          cache-dependency-path: package-lock.json   # lockfile en la raíz
+      - run: npm ci                                   # o npm install si prefieres
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: plataforma-grafica/dist         # << apunta al dist de la subcarpeta
+          path: dist                                  # dist en la raíz
   deploy:
     needs: build
     runs-on: ubuntu-latest
